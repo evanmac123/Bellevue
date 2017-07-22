@@ -26,7 +26,7 @@ get_header(); ?>
       		?>'
         </div>
           <?php if ( is_active_sidebar( 'home-widget' ) ) : ?>
-          <div class="col-sm-4" role="complementary">
+          <div class="col-lg-4" role="complementary">
             <?php dynamic_sidebar( 'home-widget' ); ?>
           </div><!-- .widget-area .second -->
           <?php endif; ?>

@@ -9,19 +9,20 @@
 
  get_header(); ?>
 
- 	<div id="primary" class="content-area">
- 		<main id="main" class="site-main" role="main">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
 
- 		<?php
+      <?php
  		if ( have_posts() ) : ?>
 
- 			<header class="page-header">
- 				<?php
+        <header class="page-header">
+          <?php
  					the_archive_title( '<h1 class="page-title">', '</h1>' );
  					the_archive_description( '<div class="archive-description">', '</div>' );
  				?>
- 			</header><!-- .page-header -->
- 			<?php
+        </header>
+        <!-- .page-header -->
+        <?php
  			/* Start the Loop */
  			while ( have_posts() ) : the_post();
 
@@ -33,7 +34,7 @@
          get_template_part( 'content', get_post_format() );
 
          ?>
-      <?php
+          <?php
  			endwhile;
 
  			the_posts_pagination( array(
@@ -47,9 +48,11 @@
 
  		endif; ?>
 
- 		</main><!-- #main -->
- 	</div><!-- #primary -->
+    </main>
+    <!-- #main -->
+  </div>
+  <!-- #primary -->
 
- <?php
+  <?php
  get_sidebar();
  get_footer();

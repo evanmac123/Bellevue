@@ -68,7 +68,7 @@ if (isset($_SERVER['HTTP_USER_AGENT']) && (strpos($_SERVER['HTTP_USER_AGENT'], '
 					</div>
 				</div>
 				<?php if ( is_active_sidebar( 'footer-header-widget' ) ) : ?>
-				<div class="col-sm-12 footer-widget" role="complementary">
+				<div class="col-md-12 header-widget hidden-sm-down" role="complementary">
 					<?php dynamic_sidebar( 'footer-header-widget' ); ?>
 				</div><!-- .widget-area .first -->
 				<?php endif; ?>
@@ -77,12 +77,8 @@ if (isset($_SERVER['HTTP_USER_AGENT']) && (strpos($_SERVER['HTTP_USER_AGENT'], '
 
 	<div id="content" class="site-content">
 
-		<div class="top-section">
-			<?php sparkling_featured_slider(); ?>
-			<?php sparkling_call_for_action(); ?>
-		</div>
-
 		<div class="main-content-area">
+			<?php sparkling_featured_slider(); ?>
             <?php $layout_class = get_layout_class(); ?>
 			<div class="row <?php echo $layout_class; ?>">
 				<div class="main-content-inner <?php echo sparkling_main_content_bootstrap_classes(); ?>">

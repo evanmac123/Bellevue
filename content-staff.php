@@ -69,23 +69,15 @@
                 </div>
               </div>
 
-
       <div class="entry-content">
         <?php the_content(); ?>
-        <?php
-				wp_link_pages( array(
-					'before'            => '<div class="page-links">'.esc_html__( 'Pages:', 'sparkling' ),
-					'after'             => '</div>',
-					'link_before'       => '<span>',
-					'link_after'        => '</span>',
-					'pagelink'          => '%',
-					'echo'              => 1
-	       		) );
-	    	?>
+        <div class="row nav-post">
+          <div class="next-posts"><?php next_post_link('%link', '<span class="post-title">%title <i class="fa fa-minus"></i></span> ') ?></div>
+          <div class="prev-posts"><?php previous_post_link('%link', '<i class="fa fa-minus"></i> <span class="post-title">%title</span>') ?></div>
+        </div>
       </div>
       <!-- .entry-content -->
     </div>
-
 
   </article>
   <!-- #post-## -->
