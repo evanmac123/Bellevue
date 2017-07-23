@@ -573,10 +573,6 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
     clear: both;
   }
 
-  #secondary .widget a {
-    color: #C1C0C0;
-  }
-
   .widget ul ul {
     padding: 10px;
   }
@@ -1722,8 +1718,9 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
     }
     .header-widget li {
       list-style: none;
-      padding: 10px 0 0 0px;
+      padding: 20px 0 0 0px;
     }
+
     /*CONTENT*/
     #content {
       float: right;
@@ -1925,7 +1922,7 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
       background-color: #313233;
       color: #999;
       float: left;
-      padding: 40px;
+      padding: 40px 0;
       width: 100%;
       margin-top: 100px;
     }
@@ -1978,7 +1975,7 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
     .nf-before-form-content {
       display: none;
     }
-    /*SIDEBAR*/
+    /*NAVIGATION*/
     .site-navigation-inner {
       padding: 10px 42px;
     }
@@ -2001,6 +1998,9 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
       text-transform: none;
       font-weight: 200;
       color: #FFFFFF;
+    }
+    .navbar-default .navbar-nav>.active>a{
+      background-color:transparent;
     }
     .top-section {
       width: 100%;
@@ -2109,8 +2109,6 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
       margin: auto;
       width: auto;
       object-fit: cover;
-      object-fit: cover;
-      height: 100%;
     }
     @media (min-width: 1200px) {
       .visible-lg-inline-block {
@@ -2213,6 +2211,15 @@ sparkling is based on Underscores http://underscores.me/, (C) 2012-2015 Automatt
     @media (max-width: 991px) {
       .hidden-md-down {
         display: none !important;
+      }
+
+      .flexslider .slides img {
+        height:100%;
+      }
+      .case_img{
+      width: 100%;
+      padding: 70px;
+      height: auto;
       }
     }
     @media (min-width: 992px) {

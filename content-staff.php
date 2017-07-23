@@ -63,10 +63,13 @@
                   <div class="staff-single__address contact">
                     <?php echo $address; ?>
                   </div>
-                  <div class="staff-single__linkedin contact">
-                    <a href="<?php echo $linkedin; ?>" class="fa fa-linkedin"></a>
-                  </div>
+                  <?php if( !empty($linkedin) ): ?>
+                <div class="staff-single__linkedin contact">
+                  <a href="<?php echo $linkedin; ?>" class="fa fa-linkedin"></a>
                 </div>
+                <?php else:
+                endif;
+                ?>
               </div>
 
       <div class="entry-content">
