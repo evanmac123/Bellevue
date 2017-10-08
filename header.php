@@ -35,7 +35,6 @@ if (isset($_SERVER['HTTP_USER_AGENT']) && (strpos($_SERVER['HTTP_USER_AGENT'], '
 
 	<header id="masthead" class="site-header col-md-2">
 		<nav class="navbar navbar-default <?php if( of_get_option( 'sticky_header' ) ) echo 'navbar-fixed-top'; ?>" role="navigation">
-				<div class="row">
 					<div class="site-navigation-inner">
 						<div class="navbar-header">
 							<button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -66,7 +65,6 @@ if (isset($_SERVER['HTTP_USER_AGENT']) && (strpos($_SERVER['HTTP_USER_AGENT'], '
 						</div>
 						<?php sparkling_header_menu(); // main navigation ?>
 					</div>
-				</div>
 				<?php if ( is_active_sidebar( 'footer-header-widget' ) ) : ?>
 				<div class="col-md-12 header-widget hidden-sm-down" role="complementary">
 					<?php dynamic_sidebar( 'footer-header-widget' ); ?>

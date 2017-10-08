@@ -2,7 +2,7 @@
 /**
  *
  *
- * This is the template for the homepage
+ * This is the template for the staff archive
  *
  * @package sparkling
  */
@@ -13,8 +13,15 @@ get_header(); ?>
 
     <main id="main" class="site-main" role="main">
       <div class="row">
-        <h1 class="col-lg-12">  Our Team</h1>
+        <h1 class="col-lg-12"> Our Team</h1>
+        <div class="col-lg-8">
+          <p>At Bellevue, we have experienced professionals who have worked at the center of the region’s press, as spokespersons, news reporters, strategists and advisors for public officials.
+          </p>
+          <p> We understand the way the press works, and we use that knowledge to create a customized communications strategy for the client, delivering it in a way that influences an outcome for the client’s benefit.
+          </p>
+        </div>
       </div>
+      <br>
       <div class="row">
         <?php
       $loop = new WP_Query( array( 'post_type' => 'Staff') );

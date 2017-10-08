@@ -571,7 +571,7 @@ endif;
  // Removing slider from blog posts
  function exclude_category($query) {
 if ( $query->is_home() ) {
-$query->set('cat', '-2');
+$query->set('cat', '-3');
 }
 return $query;
 }

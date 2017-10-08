@@ -5,7 +5,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="post-inner-content">
+	<div class="post-inner-content col-sm-8">
 		<header class="entry-header page-header">
 			<?php bcn_display(); ?>
 			<h2 class="blog-single__title "> <?php  the_title(); ?></h2>

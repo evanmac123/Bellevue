@@ -23,7 +23,7 @@ get_header(); ?>
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 				 */?>
-				 <a href="<?php the_permalink();?>" class="col-md-4 blog_list-item">
+				 <a href="<?php the_permalink();?>" class="col-md-4 col-sm-6 blog__list-item">
 					 <div class="blog__img">
 					 <?php $image = get_field('blog_image');?>
 					 <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />

@@ -19,7 +19,7 @@
     </div>
 
     <footer class="site-footer" role="contentinfo">
-      <div class="site-info container">
+      <div class="site-info">
         <div class="row">
           <?php dynamic_sidebar( 'footer-widget' ); ?>
         </div>

@@ -30,6 +30,32 @@
                 <?php endif;?>
               </div>
             </div>
+            <div class="row hidden-md-down">
+              <div class="staff-single-info col-lg-12">
+                  <div class="staff-info__title">
+                  CONTACT INFO
+                  </div>
+                  <hr class="clear">
+                  <div class="staff-single__phone contact">
+                    <?php echo $phone; ?>
+                  </div>
+                  <div class="staff-single__email contact">
+                    <a href="mailto:<?php echo $email; ?>">
+                      <?php echo $email; ?>
+                    </a>
+                  </div>
+                  <div class="staff-single__address contact">
+                    <?php echo $address; ?>
+                  </div>
+                  <?php if( !empty($linkedin) ): ?>
+                <div class="staff-single__linkedin contact">
+                  <a href="<?php echo $linkedin; ?>" class="fa fa-linkedin-square"></a>
+                </div>
+                <?php else:
+                endif;
+                ?>
+              </div>
+            </div>
         </div>
         <div class="col-md-8  staff-single__text">
           <header class="entry-header  row">
@@ -48,29 +74,32 @@
           </div>
         </div>
       </div>
-            <div class="row">
-              <div class="staff-single-info col-lg-12">
-                  CONTACT INFO
-                  <hr class="clear">
-                  <div class="staff-single__phone contact">
-                    <?php echo $phone; ?>
-                  </div>
-                  <div class="staff-single__email contact">
-                    <a href="mailto:<?php echo $email; ?>">
-                      <?php echo $email; ?>
-                    </a>
-                  </div>
-                  <div class="staff-single__address contact">
-                    <?php echo $address; ?>
-                  </div>
-                  <?php if( !empty($linkedin) ): ?>
-                <div class="staff-single__linkedin contact">
-                  <a href="<?php echo $linkedin; ?>" class="fa fa-linkedin"></a>
-                </div>
-                <?php else:
-                endif;
-                ?>
-              </div>
+      <div class="row hidden-lg-up">
+        <div class="staff-single-info col-lg-12">
+            <div class="staff-info__title">
+            CONTACT INFO
+            </div>
+            <hr class="clear">
+            <div class="staff-single__phone contact">
+              <?php echo $phone; ?>
+            </div>
+            <div class="staff-single__email contact">
+              <a href="mailto:<?php echo $email; ?>">
+                <?php echo $email; ?>
+              </a>
+            </div>
+            <div class="staff-single__address contact">
+              <?php echo $address; ?>
+            </div>
+            <?php if( !empty($linkedin) ): ?>
+          <div class="staff-single__linkedin contact">
+            <a href="<?php echo $linkedin; ?>" class="fa fa-linkedin-square"></a>
+          </div>
+          <?php else:
+          endif;
+          ?>
+        </div>
+      </div>
 
       <div class="entry-content">
         <?php the_content(); ?>
@@ -80,7 +109,6 @@
         </div>
       </div>
       <!-- .entry-content -->
-    </div>
 
   </article>
   <!-- #post-## -->
